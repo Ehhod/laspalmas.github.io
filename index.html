@@ -30,6 +30,13 @@
         .naszemenu img {
             margin: 10px; /* Dodatkowy margines dla obrazków w menu */
             height: 150px; /* Stała wysokość obrazków w menu */
+            border-radius: 50%; /* Zaokrąglenie krawędzi do 50% */
+        }
+
+        .onas img {
+            width: 100%; /* Szerokość obrazu na 100% */
+            max-width: 300px; /* Maksymalna szerokość obrazu */
+            border-radius: 15px; /* Zaokrąglenie krawędzi do 15px */
         }
 
         .onas {
@@ -37,9 +44,12 @@
             background-color: blue; /* Tło niebieskie */
             color: white; /* Kolor tekstu wewnątrz diva */
             padding: 20px; /* Wewnętrzne wypełnienie diva */
+            margin-bottom: 100px; /* Margines na dole dla uniknięcia nakładania się stopki */
         }
 
         .footer {
+            position: fixed; /* Ustawienie na stałej pozycji */
+            bottom: 0; /* Przyklejenie do dolnej krawędzi */
             background-color: rgb(60, 60, 60);
             color: white;
             padding: 20px;
@@ -79,6 +89,7 @@
     <!-- Sekcja "O Nas" -->
     <div class="onas">
         <h1>O Nas</h1>
+        <img src="onas.png" alt="O Nas">
         <p>Tutaj znajdziesz informacje o naszej restauracji.</p>
     </div>
 
